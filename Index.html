@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Prof. Vijaykumar A. Patil</title>
+    <script type="module" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js">  </script>
+    <script nomodule="" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Hamburger.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav Id="menu">
+            <ul>
+                <li><a href="Index.html" data-text="Home">Home</a></li>
+                <li><a href="about.html" data-text="About Me">About Me</a></li>
+                <li><a href="del.html" data-text="My Work">My Work</a></li>
+                <li><a href="Index.html" data-text="Contact Me">Contact Me</a></li>
+            </ul>
+            <p class="litetex">MENU</p>
+            <button class="closeIc" onclick="closemenu()">&times;</button>
+        </nav>
+        <div class="profilep">
+            <ion-icon name="menu-outline" class="menuIc" onclick="openmenu()"></ion-icon>
+            <a href="Index.html"><img src="images/logo.jpeg" alt="Logo" class="logoimag"></a>
+            <h2>Dr. Prof. Vijaykumar A. Patil</h2>
+            <p>"Sky is the limit"</p>
+            <div class="socim">
+                <ion-icon name="logo-facebook" class="fb" onclick="fbkojao()"></ion-icon>
+                <ion-icon name="logo-linkedin" class="fb linkedi"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    var menu = document.getElementById("menu");
+    var lins = document.getElementsByClassName("menuIc");
+    function closemenu() {
+        menu.style.display = "none";
+    }
+
+    function openmenu() {
+        menu.style.display = "flex";
+    }
+
+    function fbkojao() {
+        window.location.href = 'https://fb.com';
+    }
+</script>
+
+</html>

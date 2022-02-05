@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.profilep{
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.849)), url(../images/Library.jpg);
+    background-size: cover;
+    font-family: 'Lucida Grande', sans-serif;
+    font-weight: 300;
+}
+
+.profilep .logoimag{
+    border: 2px solid wheat;
+    padding: 2px;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.profilep h2{
+    text-align: center;
+    color: wheat;
+    font-size: 50px;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-weight: lighter; */
+    padding: 5px;
+}
+
+.profilep p{
+    color: wheat;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-weight: lighter; */
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+ion-icon{
+    color: wheat;
+    font-size: 25px;
+    padding: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+ion-icon:hover{
+    color: red;
+}
+
+.fb:hover{
+    color: blue;
+}
+
+
+@keyframes PullDown {
+    0%{
+        top: -100vh;
+    }
+    100%{
+        top: 0vh;
+    }
+}
+
+@keyframes PullUp {
+    0%{
+        top: 0vh;
+    }
+    100%{
+        top: -100vh;
+    }
+}
